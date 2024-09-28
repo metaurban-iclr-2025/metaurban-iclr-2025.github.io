@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaUrban: A Simulation Platform for Embodied AI in Urban Spaces</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header styling */
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            margin-top: 30px;
+            color: #2C3E50;
+        }
+
+        h3 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            color: #2C3E50;
+            text-align: center;
+        }
+
+        p {
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        /* Research Section */
+        .research-section {
+            margin: 50px auto;
+            padding: 30px;
+            max-width: 1200px; /* Increased max-width for wider content area */
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Custom heading style */
+        .custom-heading {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        /* Image Styling */
+        .white-background {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .white-background img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive Video Container */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* Maintain 16:9 aspect ratio */
+            height: 0;
+            margin-bottom: 30px;
+        }
+
+        .video-container video, .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Video Grid */
+        .video-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+        }
+
+        .video-grid video {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Adjustments for mobile view */
+        @media (max-width: 768px) {
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 2.2em;
+            }
+
+            h3 {
+                font-size: 1.8em;
+            }
+        }
+
+        /* Link and hover styling */
+        a {
+            color: #2980B9;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* GIF Styling */
+        .gif img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Code Section for copy buttons */
+        .code-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .copy-button {
+            background-color: #2C3E50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .copy-button:hover {
+            background-color: #2980B9;
+        }
+
+    </style>
+</head>
+<body>
+
+<h1>MetaUrban: A Simulation Platform for Embodied AI in Urban Spaces</h1>
+
+
+<div class="research-section">
+    <h3>TL;DR</h3>
+    <ul>
+        <li><strong>MetaUrban</strong> is a <em>compositional</em> simulation platform for Embodied AI research in urban spaces. It will be <em>publicly available</em> to enable more research opportunities for the community and foster <em>generalizable</em> and <em>safe</em> embodied AI in urban spaces.</li>
+    </ul>
+</div>
+
+<div class="research-section">
+    <h3>Introducing MetaUrban</h3>
+    <iframe 
+        src="https://www.youtube.com/embed/QmCRygV9M8o?autoplay=1&mute=1&loop=1&playlist=QmCRygV9M8o&controls=1&rel=0&showinfo=0" 
+        allow="autoplay" allowfullscreen>
+    </iframe>
+
+    <div style="text-align: center; margin-top: 10px;">
+        Download Video from
+        <a href="https://drive.google.com/file/d/1jd37MVugyM2A0LZ89W2tgV3f2EfRLEmZ/view?usp=sharing" target="_blank">Google Drive</a> | 
+        <a href="https://pan.baidu.com/s/1y1koBWpVHsJBEvLPGbXpbw?pwd=yac9" target="_blank">Baidu Netdisk</a>
+    </div>
+</div>
+
+<div class="research-section">
+    <h3>Abstract</h3>
+    <p>Public urban spaces like streetscapes and plazas serve residents and accommodate social life in all its vibrant variations.</p>
+    <p>Recent advances in Robotics and Embodied AI make public urban spaces no longer exclusive to humans. Food delivery bots and electric wheelchairs have started sharing sidewalks with pedestrians, while diverse robot dogs and humanoids have recently emerged in the street. Ensuring the generalizability and safety of these forthcoming mobile machines is crucial when navigating through the bustling streets in urban spaces.</p>
+    <p>In this work, we present MetaUrban, a <em>compositional</em> simulation platform for Embodied AI research in urban spaces. MetaUrban can construct an <em>infinite</em> number of interactive urban scenes from compositional elements, covering a vast array of ground plans, object placements, pedestrians, vulnerable road users, and other mobile agents' appearances and dynamics.</p>
+    <p>We design point navigation and social navigation tasks as the pilot study using MetaUrban for embodied AI research and establish various baselines of Reinforcement Learning and Imitation Learning.</p>
+    <p>Experiments demonstrate that the compositional nature of the simulated environments can substantially improve the generalizability and safety of the trained mobile agents. MetaUrban will be made publicly available to provide more research opportunities and foster safe and trustworthy embodied AI in urban spaces.</p>
+</div>
+
+<div class="research-section">
+    <h3>Procedural Generation Pipeline</h3>
+    <div class="white-background">
+        <img src="/assets/img/metaurban/procedural_generation.png" alt="Procedural Generation Pipeline">
+    </div>
+    <p>MetaUrban can automatically generate complex urban scenes with its compositional nature. MetaUrban uses a structured description script to create urban scenes. Based on the provided information about street blocks, sidewalks, objects, agents, and more, it starts with the street block map, then plans the ground layout by dividing different function zones, then places static objects, and finally populates dynamic agents.</p>
+</div>
+
+<div class="research-section">
+    <h3>Urban Scene Gallery</h3>
+    <div class="gif">
+        <img src="/assets/img/metaurban/urbanscene_gallery.gif" alt="Urban Scene Gallery">
+    </div>
+</div>
+
+<div class="research-section">
+    <h3>Parade of Dynamic Agents</h3>
+    <div class="video-container">
+        <video autoplay muted loop controls playsinline>
+            <source src="https://raw.githubusercontent.com/metaurban-iclr-2025/metaurban-iclr-2025.github.io/main/assets/teaser/crossroad.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+<div class="research-section">
+    <h3>Sensors</h3>
+    <div class="gif">
+        <img src="/assets/img/metaurban/sensors_grid.gif" alt="Sensors Grid">
+    </div>
+</div>
+
+<div class="research-section">
+    <h3>Benchmarks</h3>
+    <div class="white-background">
+        <img src="/assets/img/metaurban/benchmark.png" alt="Benchmarks">
+    </div>
+</div>
+
+<div class="research-section">
+    <h3>Results</h3>
+    <h4>Success Cases</h4>
+    <div class="video-grid">
+        <video muted controls playsinline>
+            <source src="https://raw.githubusercontent.com/metaurban-iclr-2025/metaurban-iclr-2025.github.io/main/assets/teaser/success1.mp4" type="video/mp4">
+        </video>
+        <video muted controls playsinline>
+            <source src="https://raw.githubusercontent.com/metaurban-iclr-2025/metaurban-iclr-2025.github.io/main/assets/teaser/success2.mp4" type="video/mp4">
+        </video>
+        <video muted controls playsinline>
+            <source src="https://raw.githubusercontent.com/metaurban-iclr-2025/metaurban-iclr-2025.github.io/main/assets/teaser/success3.mp4" type="video/mp4">
+        </video>
+        <video muted controls playsinline>
+            <source src="https://raw.githubusercontent.com/metaurban-iclr-2025/metaurban-iclr-2025.github.io/main/assets/teaser/success4.mp4" type="video/mp4">
+        </video>
+    </div>
+    <h4>Failure Cases</h4>
+    <div class="video-grid">
+        <video muted controls playsinline>
+            <source src="https://raw.githubusercontent.com/metaurban-iclr-2025/metaurban-iclr-2025.github.io/main/assets/teaser/fail1.mp4" type="video/mp4">
+        </video>
+        <video muted controls playsinline>
+            <source src="https://raw.githubusercontent.com/metaurban-iclr-2025/metaurban-iclr-2025.github.io/main/assets/teaser/fail2.mp4" type="video/mp4">
+        </video>
+        <video muted controls playsinline>
+            <source src="https://raw.githubusercontent.com/metaurban-iclr-2025/metaurban-iclr-2025.github.io/main/assets/teaser/fail3.mp4" type="video/mp4">
+        </video>
+        <video muted controls playsinline>
+            <source src="https://raw.githubusercontent.com/metaurban-iclr-2025/metaurban-iclr-2025.github.io/main/assets/teaser/fail4.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+<div class="research-section">
+    <h3>User Interface for Demonstration</h3>
+    <div class="video-grid">
+        <video muted controls playsinline>
+            <source src="https://raw.githubusercontent.com/metaurban-iclr-2025/metaurban-iclr-2025.github.io/main/assets/teaser/UI1.mp4" type="video/mp4">
+        </video>
+        <video muted controls playsinline>
+            <source src="https://raw.githubusercontent.com/metaurban-iclr-2025/metaurban-iclr-2025.github.io/main/assets/teaser/UI2.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+<div class="research-section">
+    <h3>Impacts</h3>
+    <p><strong>Embodied AI</strong>. MetaUrban contributes to advancing areas such as robot navigation, social robotics, and interactive systems. It could facilitate the development of robust AI systems capable of understanding and navigating complex urban environments.</p>
+    <p><strong>Economy</strong>. MetaUrban could be used in businesses and services operating in urban environments, such as last-mile food delivery, assistive wheelchairs, and trash-cleaning robots. It could also drive innovation in urban planning and infrastructure development.</p>
+    <p><strong>Society</strong>. By enabling the safe integration of robots and AI systems in public spaces, MetaUrban could support the development of assistive technologies that can aid in accessibility and public services.</p>
+</div>
+
+</body>
+</html>
