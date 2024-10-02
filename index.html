@@ -260,6 +260,9 @@
             Procedural Generation Pipeline
           </h2>
           <img src="/assets/img/metaurban/procedural_generation.png" alt="Procedural Generation Pipeline"/>
+          <p class="subtitle has-text-centered">
+            MetaUrban can automatically generate complex urban scenes with its compositional nature. MetaUrban uses a structured description script to create urban scenes. Based on the provided information about street blocks, sidewalks, objects, agents, and more, it starts with the street block map, then plans the ground layout by dividing different function zones, then places static objects, and finally populates dynamic agents. In the Figure, the first column is the structured description script. From the second to the fourth column, the top rows show the 2D road maps, and the bottom rows show the bird-eye view of 3D scenes in the simulator.
+          </p>
         </div>
         
         <!-- Second Image -->
@@ -284,6 +287,9 @@
             Benchmarks
           </h2>
           <img src="/assets/img/metaurban/benchmark.png" alt="Benchmarks"/>
+          <p class="subtitle has-text-centered">
+            We design two common tasks in urban scenes as the pilot study: Point Navigation (PointNav) and Social Navigation (Saccess to a pre-built environment map. In SocialNav, the agent is required to reach a point goal in dynamic environments that contain moving environmental agents. The agent shall avoid collisions or proximity to environmental agents beyond thresholds to avoid penalization (distance <0.2 meters). The agent is evaluated using the Success Rate (SR) and Success weighted by Path Length (SPL) metrics, which measure the success and efficiency of the path taken by the agent. For SocialNav, except Success Rate (SR), the Social Navigation Score (SNS), is also used to evaluate the social complicity of the agent. For both tasks, we further report the Cumulative Cost (CC) to evaluate the safety properties of the agent. It records the crash frequency to obstacles or environmental agents. We evaluate 7 typical baseline models to build comprehensive benchmarks on MetaUrban, across Reinforcement Learning (PPO), Safe Reinforcement Learning (PPO-LagocialNav). In PointNav, the agent’s goal is to navigate to the target coordinates in static environments without, and PPO-ET), Offline Reinforcement Learning (IQL and TD3+BC), and Imitation Learning (BC and GAIL).
+          </p>
         </div>
       </div>
     </div>
@@ -312,6 +318,7 @@
     <div class="hero-body">
       <div class="container">
         <h2 class="title is-3">Results</h2>
+        <p class="subtitle has-text-centered">The results of a PPO policy trained in MetaUrban environments on the social navigation task. We demonstrate success cases that can avoid collision with objects and other agents. However, there are still many interesting failure cases, which indicate the complexity of MetaUrban environments and the significant room for improvement of embodied agents in urban spaces.</p>
         <h4 class="title is-4">Success Cases</h4>
         <div id="results-carousel" class="carousel results-carousel">
           <!-- Success Video 1 -->
